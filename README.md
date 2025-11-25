@@ -69,6 +69,9 @@ Buat file baru dengan nama about.php
 <?php require('footer.php'); ?>
 ```
 
+### Screenshot
+![](screenshot.png)
+
 ## Pertanyaan dan Tugas
 
 Implementasikan konsep modularisasi pada kode program praktikum 8 tentang database, sehingga setiap halamannya memiliki template tampilan yang sama. Dan terapkan penggunaan Routing agar project menjadi lebih modular.
