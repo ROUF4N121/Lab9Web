@@ -70,7 +70,7 @@ Buat file baru dengan nama about.php
 ```
 
 ### Screenshot
-![](screenshot.png)
+![](screenshot1.png)
 
 ## Pertanyaan dan Tugas
 
