@@ -74,7 +74,31 @@ Buat file baru dengan nama about.php
 Implementasikan konsep modularisasi pada kode program praktikum 8 tentang database, sehingga setiap halamannya memiliki template tampilan yang sama. Dan terapkan penggunaan Routing agar project menjadi lebih modular.
 Gunakan struktur direktory seperti berikut:
 
+```
+project/
+│── index.php
+│── config/
+│   └── database.php
+│── views/
+│   ├── header.php
+│   ├── footer.php
+│   └── dashboard.php
+│── modules/
+│   ├── user/
+│   │   ├── list.php
+│   │   └── add.php
+│   └── auth/
+│       ├── login.php
+│       └── logout.php
+│── assets/
+    ├── css/
+    └── js/
+
+```
+
 Routing menggunakan url: index.php?page=user/list
 
 Opsional: Gunakan htaccess agar url lebih SEO Friendly.
 Contoh URL: (base-domain)/user/list
+
+### Jawab
