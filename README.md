@@ -130,6 +130,35 @@ project/
         |── script.js
 ```
 
+#### Sebelum itu kita haru buat database kali ini saya membuat database dengan 2 tabel
+
+```sql
+CREATE DATABASE latihan_user;
+
+USE latihan_user;
+
+CREATE TABLE data_user (
+    id_user INT(10) AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(50),
+    email VARCHAR(50),
+    gender ENUM('Laki-laki', 'Perempuan'),
+    tanggal_lahir DATE,
+    telepon VARCHAR(20),
+    alamat VARCHAR(100)
+);
+
+CREATE TABLE users_login (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50),
+    password VARCHAR(100)
+);
+
+INSERT INTO users_login (username, password)
+VALUES ('admin', MD5('admin123'));
+```
+
+#### Sekarang kita mulai program utamanya.
+
 #### Buat file baru dengan nama index.php
 
 ```php
