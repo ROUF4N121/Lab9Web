@@ -130,7 +130,7 @@ project/
         |── script.js
 ```
 
-#### Sebelum itu kita haru buat database kali ini saya membuat database dengan 2 tabel
+#### Sebelum itu kita haru buat database. kali ini saya membuat database dengan 2 tabel.
 
 ```sql
 CREATE DATABASE latihan_user;
