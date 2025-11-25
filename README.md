@@ -130,7 +130,7 @@ project/
         |── script.js
 ```
 
-Buat file baru dengan nama index.php
+#### Buat file baru dengan nama index.php
 
 ```php
 <?php
@@ -160,7 +160,7 @@ include 'views/footer.php';
 ?>
 ```
 
-Buat folder baru bernama config dan buat file database.php
+#### Buat folder baru bernama config dan buat file database.php
 
 ```php
 <?php
@@ -177,9 +177,9 @@ if (!$conn) {
 ?>
 ```
 
-Sekarang, buat folder views yang berisi header.php, footer.php dan dashboard.php
+#### Sekarang, buat folder views yang berisi header.php, footer.php dan dashboard.php
 
-header.php
+1. header.php
 ```php
 <!DOCTYPE html>
 <html lang="en">
@@ -207,7 +207,7 @@ header.php
     <main>
 ```
 
-footer.php
+2. footer.php
 ```php
     </main>
 
@@ -219,7 +219,7 @@ footer.php
 </html>
 ```
 
-dashboard.php
+3. dashboard.php
 ```php
 <?php
 $sqlCount = "SELECT COUNT(*) AS total FROM data_user";
@@ -257,11 +257,11 @@ setInterval(() => {
 </script>
 ```
 
-Sekarang, buat folder bernama modules dan folder tersebut diisi lagi folder user dan auth
+#### Sekarang, buat folder bernama modules dan folder tersebut diisi lagi folder user dan auth
 
-Di folder user buat 4 file add.php, list.php, delete.php dan edit.php
+#### Di folder user buat 4 file add.php, list.php, delete.php dan edit.php
 
-add.php
+1. add.php
 ```php
 <?php
 if (isset($_POST['submit'])) {
@@ -309,7 +309,7 @@ if (isset($_POST['submit'])) {
 </form>
 ```
 
-list.php
+2. list.php
 ```php
 <?php
 $sql = "SELECT * FROM data_user";
@@ -356,7 +356,7 @@ $result = mysqli_query($conn, $sql);
 </table>
 ```
 
-delete.php
+3. delete.php
 ```php
 <?php
 include 'config/database.php';
@@ -371,7 +371,7 @@ echo "<script>window.location='index.php?page=user/list'</script>";
 ?>
 ```
 
-edit.php
+4. edit.php
 ```php
 <?php
 include 'config/database.php';
@@ -434,9 +434,9 @@ if (isset($_POST['submit'])) {
 </form>
 ```
 
-Di folder auth buat 2 file login.php dan logout.php
+#### Di folder auth buat 2 file login.php dan logout.php
 
-login.php
+1. login.php
 ```php
 <?php
 session_start();
@@ -490,7 +490,7 @@ if (isset($_POST['submit'])) {
 </html>
 ```
 
-logout.php
+2. logout.php
 ```php
 <?php
 session_start();
@@ -501,11 +501,11 @@ echo "<script>window.location='login.php'</script>";
 ?>
 ```
 
-Sekarang, buat folder bernama assets dan folder tersebu berisi folder css dan js
+#### Sekarang, buat folder bernama assets dan folder tersebu berisi folder css dan js
 
-di folder css diisi style.css dan login.css
+#### di folder css diisi style.css dan login.css
 
-style.css
+1. style.css
 ```css
 body {
     font-family: Arial, sans-serif;
@@ -596,7 +596,7 @@ button:hover, input[type="submit"]:hover {
 }
 ```
 
-login.css
+2. login.css
 ```css
 body {
     margin: 0;
@@ -653,9 +653,9 @@ body {
 }
 ```
 
-di folder js diisi file script.js
+#### di folder js diisi file script.js
 
-script.js
+1. script.js
 ```js
 console.log("JS Loaded!");
 
