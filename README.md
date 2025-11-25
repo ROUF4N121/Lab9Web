@@ -697,6 +697,6 @@ function confirmDelete() {
    style="color:red;">Hapus</a>
 ```
 
-### Demo Video
+### Demo Video (klik gambar untuk lihat video)
 
 [![Watch the video](https://img.youtube.com/vi/TcOdKDGIBGE/0.jpg)](https://youtu.be/TcOdKDGIBGE)
