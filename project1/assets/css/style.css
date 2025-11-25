@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 85%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+nav {
+    margin: 15px 0;
+    background: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a {
+    color: white;
+    padding: 8px 12px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+nav a:hover {
+    background: #0056b3;
+}
+
+main {
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background: #f0f0f0;
+}
+
+/* Form */
+input, select {
+    padding: 8px;
+    margin: 5px 0 10px;
+    width: 50%;
+}
+
+button, input[type="submit"] {
+    background: #28a745;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+    background: #218838;
+}
